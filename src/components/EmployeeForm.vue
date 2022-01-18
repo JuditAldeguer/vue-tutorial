@@ -13,7 +13,7 @@
       >
       <label>Employee Email</label>
       <input
-        type="text"
+        type="email"
         :class="{ 'has-error': submitting && invalidEmail }"
         v-model="employee.email"
         @focus="clearStatus"
@@ -21,7 +21,7 @@
       <p
         v-if="error && submitting"
         class="error-message"
-      >❗Please fill out all required fields</p>
+      > ❗ Please fill out all required fields</p>
       <p
         v-if="success"
         class="success-message"
